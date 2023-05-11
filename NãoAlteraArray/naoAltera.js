@@ -28,3 +28,17 @@ console.log(str)
 var pos=frutas.indexOf("Uva") // indice do elemento
 var ultima = frutas.lastIndexOf("Uva") // ultimo indice 
 console.log(ultima)
+
+// EXERCÍCIOS
+
+let frutas=["uva","maçã","pera","uva"]
+console.log(frutas.join("+"))
+
+let nomes=["Zé", "Téo", "Ana", "Bia"]
+
+let array2 = nomes.concat(frutas)
+console.log(array2)
+
+// SLICE SEM PARÂMETRO CLONA ARRAY
+let copia = frutas.slice()
+console.log(copia)
