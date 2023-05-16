@@ -20,3 +20,22 @@ function checaSeEuGostei(number) {
 number.find(checaSeEuGostei)// primeiro elemento maior ou igual a 18
 
 console.log(number.includes(38))//true, possui 38
+
+
+
+// OUTRA AO MAP,FILTER,FOR EACH, REDUCE
+
+let GolsF = [2,0,3,1,0,2,3,2]
+let GolsF_dobro= GolsF.map(x => 2*x)//array dobrada
+console.log(GolsF_dobro)
+let GolsF22 = GolsF_dobro.filter(x => x>1)// filtra elementos maiores que 1
+console.log(GolsF22)
+
+
+
+// FOR EACH DOBRANDO
+
+GolsF.forEach(x=>console.log(2*x))// forEach imprime, pois não retorna nada
+
+let soma = GolsF.reduce((acc,x) => acc+x) //acc é acumulador. acumulador inicialmente é igual a zero(vai Somando)
+console.log("Soma do número de gols do fortaleza: "+ soma)
